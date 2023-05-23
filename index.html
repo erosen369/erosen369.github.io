@@ -7,9 +7,10 @@
     freely copied or excerpted for educational purposes with credit to the author.
     
     Changelog:
-    05/221/2023 Ethan Rosenbaum Initial creation.
+    05/21/2023 Ethan Rosenbaum Initial creation.
+    05/23/2023 Ethan Rosenbaum Add comments, correct spelling.
 
-    Header taken from HW assignment 1 - credit to Wenjin Zhou.
+    Header taken from HW assignment 1 example by Wenjin Zhou.
 -->
 
 <!DOCTYPE html>
@@ -19,6 +20,8 @@
         <title>Ethan's Homepage</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
+
+    <!-- Beginning of site body-->
     <body>
         <!-- Navigation pane - utilizes unordered list of links - intended to be horizontal. -->
         <nav class="navbar">
@@ -38,6 +41,7 @@
         <section class="std_info" name="about_me">
             <h2>About Me</h2>
 
+            <!-- Images -->
 
             <figure class="self_pic">
                 <img src="images/ethan_cheekwood.jpg" alt="Me at Cheekwood (Nashville, TN)" >
@@ -48,6 +52,8 @@
 
             <img class="barry" src="images/barry_bathed_in_light.jpg" alt="Barry">
         
+            <!-- End of images -->
+
             <br>
             <p>
                 Hello, my name is Ethan Rosenbaum. I work as a professional software engineer within a BIOS firmware development group.
@@ -68,10 +74,11 @@
             </p>
             <br>
             <p>
-                A secondary hobby of mine is reading. I prefer non-fiction, but I do love a good story and ahve been known to read historical fiction.
-                Presently, I am researching chronic disease, specifically as it relates to diet, as well as proper human biomechanics for 
-                running and walking. This site contains a table of books which I have read recently, links to the author's website, and a brief 
-                review of the text.
+                A secondary hobby of mine is reading. I prefer non-fiction, but I do love a good story and have been known to read historical fiction.
+                <i>A Gentleman in Moscow</i> by Amore Towles and <i>The Inner Game of Tennis</i> by W. Timothy Gallway are my favorite 
+                fiction and non-fiction books of this recent part of my life. Presently, I am researching chronic disease, specifically as it relates to diet, 
+                as well as proper human biomechanics for running and walking. This site contains a table of books which I have read recently, 
+                links to the author's website, and a brief review of each text.
             </p>
             
         </section>
@@ -96,10 +103,12 @@
 
             <!-- Beginning of table -->
             <table>
+
+                <!-- Header row -->
                 <tr class="t_header">
                     <th>Book</th>
-                    <th>Author</th>
-                    <th>Completed</th>
+                    <th class="t_author">Author</th>
+                    <th class="t_completed">Completed</th>
                     <th>Comments</th>
                 </tr>
 
@@ -110,8 +119,8 @@
                             <img src="https://images-us.bookshop.org/ingram/9781943370030.jpg?height=500&v=v2" alt="Movement Matters">
                         </a>
                     </td>
-                    <td>Katy Bowman</td>
-                    <td>04/30/2023</td>
+                    <td class="t_author">Katy Bowman</td>
+                    <td class="t_completed">04/30/2023</td>
                     <td>
                         <p>
                             A collection of essays by biomechanist Katy Bowman. It delves into the minutia of movement
@@ -131,8 +140,8 @@
                             <img src="https://images-us.bookshop.org/ingram/9781451624434.jpg?height=500&v=v2" alt="The Big Fat Surprise">
                         </a>
                     </td>
-                    <td>Nina Teicholz</td>
-                    <td>03/23/2023</td>
+                    <td class="t_author">Nina Teicholz</td>
+                    <td class="t_completed">03/23/2023</td>
                     <td>
                         <p>
                             Science reporter Nina Teicholz presents a compelling case for including saturated fat in a healthy diet.
@@ -150,8 +159,8 @@
                             <img src="https://images-us.bookshop.org/ingram/9781953295774.jpg?height=500&v=v2" alt="Why We Get Sick">
                         </a>
                     </td>
-                    <td>Benjamin Bikman</td>
-                    <td>03/20/2023</td>
+                    <td class="t_author">Benjamin Bikman</td>
+                    <td class="t_completed">03/20/2023</td>
                     <td>
                         <p>
                             An excellent description of the hormonal processes and impacts of chronic disease.
@@ -164,7 +173,11 @@
             </table> <!-- End of table -->
             
             
-        </section>
+        </section> <!-- End of 'recently read' -->
+
+        <!--
+            End of main content section.
+        -->
 
         <footer>
             <a href="mailto:ethan_rosenbaum@student.uml.edu">ethan_rosenbaum@student.uml.edu</a>

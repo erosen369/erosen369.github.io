@@ -1,6 +1,14 @@
 /*
     File: style.css
     GUI Assignment: Creating Your First Web Page
+    Ethan Rosenbaum, UML Computer Science, ethan_rosenbaum@student.uml.edu    
+    
+    Copyright (c) 2023 by Ethan. All Rights reserved. May be
+    freely copied or excerpted for educational purposes with credit to the author.
+
+    Header taken from HW assignment 1 example by Wenjin Zhou.
+
+*/
 
 /* Global style settings */
 * {
@@ -56,8 +64,9 @@ header {
 }
 
 /*
-    std_info class style rules.
+    std_info class style rules
 
+    Images on either side with text in the middle.
 */
 
 .std_info {
@@ -113,11 +122,32 @@ header {
 
 /* Style table - add single edge border. */
 .table_info table, th, td {
-    border: 2px solid;
-    border-collapse: collapse;
+    padding: 5px;
 }
 
-/* Style images within table - add padding to give some padding to prevent crowded look. */
+/* Common style for th and td elements */
+.table_info th, td {
+    padding: 5px;
+}
+
+/* Style specific to author column */
+.t_author {
+    width: 15%;
+}
+
+/* Style specific to completed column*/
+.t_completed {
+    width: 15%;
+}
+
+/* Style specific to table header */
+.table_info th {
+    background-color: #191c9e;
+    color: white;
+    height: 40px;
+}
+
+/* Style images within table - add padding to prevent crowded look. */
 .table_info img {
     max-width: 250px;
     max-height: 250px;
@@ -127,6 +157,7 @@ header {
     padding: 20px;
 }
 
+/* Style rules for footer */
 footer {
     background-color: #F1F1F1;
     text-align: center;
