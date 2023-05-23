@@ -1,0 +1,134 @@
+/*
+    File: style.css
+    GUI Assignment: Creating Your First Web Page
+
+/* Global style settings */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+/*
+    Navigation styling rules
+*/
+
+/* Navigation styling*/
+.navbar {
+    overflow: hidden;
+    background-color: #191c9e;
+}
+
+/* Style unordered list for navigation links */
+.navbar ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style navigation link list elements - inline block makes the pane look more full. */
+.navbar li {
+    display: inline-block;
+    padding: 20px;
+}
+
+/* Style links to give contrast on background. */
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Style the link on hover to show user whether they're selecting the link. */
+.navbar a:hover {
+    background-color: #000;
+    text-decoration: none;
+}
+
+/*
+    std_info class style rules.
+
+*/
+
+.std_info {
+    margin: 3em;
+    text-align: left;
+    width: 80%;
+}
+
+.std_info p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.std_info img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    float:right;
+    padding: 20px;
+}
+
+.std_info figure {
+    float: left;
+    padding: 20px;
+    margin: 10px;
+}
+
+.std_info figcaption {
+    text-align: center;
+    padding: 2px;
+
+}
+
+/*
+    table_info class style rules.
+*/
+.table_info {
+    margin: 3em;
+    text-align: center;
+    width: 80%;
+}
+
+/* Align heading with std_info headings */
+.table_info h2 {
+    text-align: left;
+}
+
+.table_info table {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Style table - add single edge border. */
+.table_info table, th, td {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+/* Style images within table - add padding to give some padding to prevent crowded look. */
+.table_info img {
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    float:right;
+    padding: 20px;
+}
+
+footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }

@@ -1,0 +1,175 @@
+<!--
+    File: index.html
+    GUI Assignment: Creating Your First Web Page
+    Ethan Rosenbaum, UML Computer Science, ethan_rosenbaum@student.uml.edu
+
+    Copyright (c) 2023 by Ethan. All Rights reserved. May be
+    freely copied or excerpted for educational purposes with credit to the author.
+    
+    Changelog:
+    05/221/2023 Ethan Rosenbaum Initial creation.
+
+    Header taken from HW assignment 1 - credit to Wenjin Zhou.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ethan's Homepage</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Navigation pane - utilizes unordered list of links - intended to be horizontal. -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#reading_list">Recently Read</a></li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <!-- 
+            About me section - contains biographical information.
+            Includes pictures of myself and my cat.
+        -->
+        <section class="std_info" name="about_me">
+            <h2>About Me</h2>
+
+
+            <figure class="self_pic">
+                <img src="images/ethan_cheekwood.jpg" alt="Me at Cheekwood (Nashville, TN)" >
+                <figcaption>
+                    <a href="https://cheekwood.org/">Cheekwood Estate</a> in Nashville, TN
+                </figcaption>
+            </figure>     
+
+            <img class="barry" src="images/barry_bathed_in_light.jpg" alt="Barry">
+        
+            <br>
+            <p>
+                Hello, my name is Ethan Rosenbaum. I work as a professional software engineer within a BIOS firmware development group.
+                All development for this codebase is done in C and all of the work is on embedded platforms. There are some other programming 
+                languages used, <abbr title="Bourne Again Shell">BaSH</abbr>, Ruby, Python, for automation and testing.
+            </p>
+            <br>
+            <p>
+                I grew up in Andover, MA. I currently live in Lowell, MA, with my cat, Barry. Hes very large, very grey, and very sweet. 
+                He enjoys sitting in windows, rolling around on the floor, and sleeping.
+            </p>
+            <br>
+            <p>
+                My primary hobby is athletics. I have completed at least one competition or competitive season in 
+                basketball, marathon canoe racing, gymnastics, ultimate frisbee, and soccer. In the summers, I enjoy open water swimming and
+                trail running in the summer. Currently, I am taking parkour classes at <a href="https://www.hubptc.com/">Hub Parkour Training Center</a>
+                in Norton MA.
+            </p>
+            <br>
+            <p>
+                A secondary hobby of mine is reading. I prefer non-fiction, but I do love a good story and ahve been known to read historical fiction.
+                Presently, I am researching chronic disease, specifically as it relates to diet, as well as proper human biomechanics for 
+                running and walking. This site contains a table of books which I have read recently, links to the author's website, and a brief 
+                review of the text.
+            </p>
+            
+        </section>
+
+        <hr>
+
+        <!-- 
+            Reading list
+
+            Uses a table based section. Each row of the table details:
+              * The cover of the book which is also a link to buy the book on bookshop.org. (sized to 300x300)
+              * The author of the book.
+              * The date that I finished reading the book.
+              * My comments/review of the book.
+
+            All images are property of bookshop.org and are being used for educational purposes only.
+        -->
+        <section class="table_info" name="reading_list">
+            <h2>Recently Read</h2>
+
+            <br>
+
+            <!-- Beginning of table -->
+            <table>
+                <tr class="t_header">
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Completed</th>
+                    <th>Comments</th>
+                </tr>
+
+                <!-- Movement Matters -->
+                <tr class="t_data_row">
+                    <td>
+                        <a href="https://bookshop.org/p/books/movement-matters-essays-on-movement-science-movement-ecology-and-the-nature-of-movement-katy-bowman/9835404?ean=9781943370030">
+                            <img src="https://images-us.bookshop.org/ingram/9781943370030.jpg?height=500&v=v2" alt="Movement Matters">
+                        </a>
+                    </td>
+                    <td>Katy Bowman</td>
+                    <td>04/30/2023</td>
+                    <td>
+                        <p>
+                            A collection of essays by biomechanist Katy Bowman. It delves into the minutia of movement
+                            and extrapolates the consequences of a sedentary lifestyle on the human body and the world we
+                            live in. I found the perspective of nutritious movement to be compelling. Nutritious movement
+                            supports and improves ones capability to inhabit positions, walk up hills, run without pain, etc.
+                            It made me re-think the natural quality of what I do in the gym and reconsider my goals for how I can
+                            move.
+                        </p>
+                    </td>
+                </tr> <!-- End of Movement Matters -->                
+
+                <!-- The Big Fat Surprise -->
+                <tr class="t_data_row">
+                    <td>
+                        <a href="https://bookshop.org/p/books/the-big-fat-surprise-why-butter-meat-and-cheese-belong-in-a-healthy-diet-nina-teicholz/7060313?ean=9781451624434">
+                            <img src="https://images-us.bookshop.org/ingram/9781451624434.jpg?height=500&v=v2" alt="The Big Fat Surprise">
+                        </a>
+                    </td>
+                    <td>Nina Teicholz</td>
+                    <td>03/23/2023</td>
+                    <td>
+                        <p>
+                            Science reporter Nina Teicholz presents a compelling case for including saturated fat in a healthy diet.
+                            Her well cited work presents the history of the medical establishments war on fat, takes apart the data used
+                            to justify the decisions to recommend limitations on fat to americans, and exposes the weak evidence for
+                            the 'healthy' diets sold to us, such as the low fat and mediterranean diets.
+                        </p>
+                    </td>
+                </tr> <!-- End of The Big Fat Surprise -->
+
+                <!-- Why We Get Sick -->
+                <tr class="t_data_row">
+                    <td>
+                        <a href="https://bookshop.org/p/books/why-we-get-sick-the-hidden-epidemic-at-the-root-of-most-chronic-disease-and-how-to-fight-it-benjamin-bikman/15511851?ean=9781953295774">
+                            <img src="https://images-us.bookshop.org/ingram/9781953295774.jpg?height=500&v=v2" alt="Why We Get Sick">
+                        </a>
+                    </td>
+                    <td>Benjamin Bikman</td>
+                    <td>03/20/2023</td>
+                    <td>
+                        <p>
+                            An excellent description of the hormonal processes and impacts of chronic disease.
+                            Ben Bikman's writing is insightful and digestable. This book is empowering for someone
+                            who wants to have a better handle on the care they need when dealing with their condition.
+                        </p>
+                    </td>
+                </tr> <!-- End of Why We Get Sick -->
+     
+            </table> <!-- End of table -->
+            
+            
+        </section>
+
+        <footer>
+            <a href="mailto:ethan_rosenbaum@student.uml.edu">ethan_rosenbaum@student.uml.edu</a>
+            <p>Copyright &copy; 2023</p>
+        </footer>
+    
+    </body>
+</html>
