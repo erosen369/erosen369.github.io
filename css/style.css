@@ -10,7 +10,11 @@
 
 */
 
-/* Global style settings */
+/* Global style settings 
+    * border-box allows padding and border to be used in element size calculation.
+      W3 recommends adding to all elements.
+    * Set margins to 0 - override below as needed.
+*/
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box; 
@@ -31,13 +35,13 @@ header {
     Navigation styling rules
 */
 
-/* Navigation styling*/
+/* Navigation styling - hidden overflow clips content if too large*/
 .navbar {
     overflow: hidden;
     background-color: #191c9e;
 }
 
-/* Style unordered list for navigation links */
+/* Move links to center and remove list markers. */
 .navbar ul {
     list-style-type: none;
     text-align: center;
@@ -45,13 +49,13 @@ header {
     margin: 0;
 }
 
-/* Style navigation link list elements - inline block makes the pane look more full. */
+/* Inline block and padding makes the pane look more full. */
 .navbar li {
     display: inline-block;
     padding: 20px;
 }
 
-/* Style links to give contrast on background. */
+/* Change link text and remove default styling. */
 .navbar a {
     color: #ffffff;
     text-decoration: none;
@@ -80,6 +84,7 @@ header {
     margin-right: 5%;
 }
 
+
 .std_info img {
     max-width: 300px;
     max-height: 300px;
@@ -89,12 +94,14 @@ header {
     padding: 20px;
 }
 
+/* Get figure on left side padding and margin avoid crowding text. */
 .std_info figure {
     float: left;
     padding: 20px;
     margin: 10px;
 }
 
+/* Center caption under image. */
 .std_info figcaption {
     text-align: center;
     padding: 2px;
@@ -120,27 +127,22 @@ header {
     margin-right: 5%;
 }
 
-/* Style table - add single edge border. */
+/* Style table to have padding within each cell */
 .table_info table, th, td {
     padding: 5px;
 }
 
-/* Common style for th and td elements */
-.table_info th, td {
-    padding: 5px;
-}
-
-/* Style specific to author column */
+/* Style specific to author column - enlarge slightly from default to prevent cramping*/
 .t_author {
     width: 15%;
 }
 
-/* Style specific to completed column*/
+/* Style specific to completed column - enlarge slightly from default to prevent cramping*/
 .t_completed {
     width: 15%;
 }
 
-/* Style specific to table header */
+/* Style specific to table header - recolor to blue, matching nav, and enlarge slightly to emphasize*/
 .table_info th {
     background-color: #191c9e;
     color: white;
@@ -153,7 +155,6 @@ header {
     max-height: 250px;
     width: auto;
     height: auto;
-    float:right;
     padding: 20px;
 }
 

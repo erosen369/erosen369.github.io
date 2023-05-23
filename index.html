@@ -9,12 +9,13 @@
     Changelog:
     05/21/2023 Ethan Rosenbaum Initial creation.
     05/23/2023 Ethan Rosenbaum Add comments, correct spelling.
+    05/23/2023 Made changes to conform to validator.
 
     Header taken from HW assignment 1 example by Wenjin Zhou.
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Ethan's Homepage</title>
@@ -27,8 +28,8 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#about_me">About Me</a></li>
-                <li><a href="#reading_list">Recently Read</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#recently-read">Recently Read</a></li>
             </ul>
         </nav>
 
@@ -38,8 +39,8 @@
             About me section - contains biographical information.
             Includes pictures of myself and my cat.
         -->
-        <section class="std_info" name="about_me">
-            <h2>About Me</h2>
+        <div class="std_info">
+            <h2 id="about-me">About Me</h2>
 
             <!-- Images -->
 
@@ -81,7 +82,7 @@
                 links to the author's website, and a brief review of each text.
             </p>
             
-        </section>
+        </div>
 
         <hr>
 
@@ -96,8 +97,8 @@
 
             All images are property of bookshop.org and are being used for educational purposes only.
         -->
-        <section class="table_info" name="reading_list">
-            <h2>Recently Read</h2>
+        <div class="table_info">
+            <h2 id="recently-read">Recently Read</h2>
 
             <br>
 
@@ -173,7 +174,7 @@
             </table> <!-- End of table -->
             
             
-        </section> <!-- End of 'recently read' -->
+        </div> <!-- End of 'recently read' -->
 
         <!--
             End of main content section.
