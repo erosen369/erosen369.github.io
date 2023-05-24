@@ -10,6 +10,7 @@
     05/21/2023 Ethan Rosenbaum Initial creation.
     05/23/2023 Ethan Rosenbaum Add comments, correct spelling.
     05/23/2023 Made changes to conform to validator.
+    05/23/2023 Added comments/citations.
 
     Header taken from HW assignment 1 example by Wenjin Zhou.
 -->
@@ -24,7 +25,10 @@
 
     <!-- Beginning of site body-->
     <body>
-        <!-- Navigation pane - utilizes unordered list of links - intended to be horizontal. -->
+        <!-- 
+            Navigation pane - utilizes unordered list of links - intended to be horizontal. 
+            Navbar ideas adapted from W3 schools horizontal navbar tutorial.
+        -->
         <nav class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -51,7 +55,14 @@
                 </figcaption>
             </figure>     
 
-            <img class="barry" src="images/barry_bathed_in_light.jpg" alt="Barry">
+            <!-- 
+                Make image open in new tab. 
+                See https://codelikeadev.com/blog/open-image-in-new-tab-html 
+            -->
+            <a href="images/barry_bathed_in_light.jpg" target="_blank">
+                <img class="barry" src="images/barry_bathed_in_light.jpg" alt="Barry">
+            </a>
+            
         
             <!-- End of images -->
 
